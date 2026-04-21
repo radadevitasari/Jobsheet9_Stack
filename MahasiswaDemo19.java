@@ -40,13 +40,15 @@ public class MahasiswaDemo19 {
                         int nilai = scan.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai tugas %s adalah %d\n", dinilai.nama, nilai);
+                        String biner = stack.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas: " + biner);
                     }
                     break;
 
                 case 3:
                     Mahasiswa19 lihat = stack.peek();
                     if (lihat != null) {
-                        System.out.printf("Tugas terakhir dikumpulkan oleh % ", lihat.nama);
+                        System.out.printf("Tugas terakhir dikumpulkan oleh %s\n ", lihat.nama);
                     }
                     break;
 
